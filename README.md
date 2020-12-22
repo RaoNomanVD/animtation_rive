@@ -1,4 +1,4 @@
-# objanimation
+# Rive Animation 
 
 A new Flutter project.
 
