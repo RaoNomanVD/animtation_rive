@@ -35,18 +35,34 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Container(
-        height: 200,
-        child: Center(
-            child: FlareActor(
-          'assets/anim1.flr',
-          animation: 'Untitled',
-          fit: BoxFit.contain,
-          color: Colors.red,
-          isPaused: false,
-          alignment: Alignment.center,
-          
-        )),
+      body: Column(
+        children: [
+          Container(
+            height: 200,
+            child: Center(
+                child: FlareActor(
+              'assets/anim1.flr',
+              animation: 'Untitled',
+              fit: BoxFit.contain,
+              color: Colors.red,
+              isPaused: false,
+              alignment: Alignment.center,
+            )),
+          ),
+          Container(
+            height: 200,
+            child: Center(
+                child: FlareActor(
+              'assets/jumping.flr',
+              animation: 'jump',
+              fit: BoxFit.contain,
+              color: Colors.red,
+              snapToEnd: true,
+              isPaused: false,
+              alignment: Alignment.center,
+            )),
+          ),
+        ],
       ),
     );
   }
